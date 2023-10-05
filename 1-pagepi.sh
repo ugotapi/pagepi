@@ -23,10 +23,11 @@ cd ~
 
 
 #autohide taskbar by copying panel file to user profile and editing it disable updater notifications
-sudo awk 'NR==FNR{if (/  type=updater/) for (i=-1;i<=3;i++) del[NR+i]; next} !(FNR in del)' /etc/xdg/lxpanel/LXDE-pi/panels/panel /etc/xdg/lxpanel/LXDE-pi/panels/panel > /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
+# sudo awk 'NR==FNR{if (/  type=updater/) for (i=-1;i<=3;i++) del[NR+i]; next} !(FNR in del)' /etc/xdg/lxpanel/LXDE-pi/panels/panel /etc/xdg/lxpanel/LXDE-pi/panels/panel > /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
 # edit file to hide panel
 sudo sed -i "s/autohide=.*/autohide=1/" /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
 sudo sed -i "s/heightwhenhidden=.*/heightwhenhidden=0/" /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
+sed -i '/  point_at_menu=0/a notifications=0' /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
 
 
 #hide mouse when no movement allow programmed refresh
