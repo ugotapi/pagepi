@@ -4,9 +4,6 @@ ifconfig
 read -p 'What is thew website url - https://www.google.com/news ' webvar
 
 
-
-
-
 echo Site you want to display on TV? $webvar
 while true; do
     read -p "Is the above info correct? " yn
@@ -91,8 +88,6 @@ EOL
 # refresh screen local via keyboard emulation
 echo '#!/bin/sh' > /home/$USER/refresh.sh 
 sudo chmod +x /home/$USER/refresh.sh 
-
-
 
 
 read -p "After this reboot webisgte should display. To edit the website displayed edit: /home/$USER/myscript.sh  Hit Enter key to continue"
