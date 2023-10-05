@@ -89,6 +89,16 @@ EOL
 echo '#!/bin/sh' > /home/$USER/refresh.sh 
 sudo chmod +x /home/$USER/refresh.sh 
 
+cd ~
+# refresh every 15 minutes
+#write out current crontab
+crontab -l > mycron
+#echo new cron into cron file
+echo "*/15 * * * * DISPLAY=:0 /home/$USER/refresh.sh" >> mycron
+#install new cron file
+crontab mycron
+rm mycron
+
 
 read -p "After this reboot webisgte should display. To edit the website displayed edit: /home/$USER/myscript.sh  Hit Enter key to continue"
 sudo reboot
