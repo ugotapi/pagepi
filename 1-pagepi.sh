@@ -20,7 +20,7 @@ echo continuing
 sudo systemctl enable ssh 
 sudo systemctl start ssh
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
 cd ~
 
 
