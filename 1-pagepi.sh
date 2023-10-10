@@ -19,6 +19,8 @@ echo continuing
 #enable ssh server
 sudo systemctl enable ssh 
 sudo systemctl start ssh
+sudo apt update
+sudo apt upgrade
 cd ~
 
 
