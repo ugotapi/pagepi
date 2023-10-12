@@ -23,6 +23,19 @@ sudo apt update
 sudo apt upgrade -y
 cd ~
 
+#re-enable X display server vs new Wayland. Becuse old tools for X dont work in Wayland. 
+sudo sed -i "s/greeter-session=pi-greeter-wayfire/greeter-session=pi-greeter/" /etc/lightdm/lightdm.conf
+sudo sed -i "s/user-session=LXDE-pi-wayfire/user-session=LXDE-pi-x/" /etc/lightdm/lightdm.conf
+sudo sed -i "s/autologin-session=LXDE-pi-wayfire/autologin-session=LXDE-pi-x/" /etc/lightdm/lightdm.conf
+
+#autohide taskbar by copying panel file to user profile and editing it disable updater notifications
+sudo cp -a /etc/xdg/lxpanel /home/$USER/.config/
+sudo awk 'NR==FNR{if (/  type=updater/) for (i=-1;i<=3;i++) del[NR+i]; next} !(FNR in del)' /etc/xdg/lxpanel/LXDE-pi/panels/panel /etc/xdg/lxpanel/LXDE-pi/panels/panel > /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
+# edit file to hide panel
+sudo sed -i "s/autohide=.*/autohide=1/" /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
+sudo sed -i "s/heightwhenhidden=.*/heightwhenhidden=0/" /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
+sed -i '/  point_at_menu=0/a notifications=0' /home/$USER/.config/lxpanel/LXDE-pi/panels/panel
+
 
 
 #hide mouse when no movement allow programmed refresh
