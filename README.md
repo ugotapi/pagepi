@@ -1,5 +1,5 @@
 # pagepi
-Extremely simple kiosk mode pi4 that shows an external web page. By default page refreshes every 15 minutes by keyboard simulation refresh. This script is compatible with this Raspian Bookworm from 10-10-2023. 
+Extremely simple kiosk mode pi4 that shows an external web page. By default page refreshes every 15 minutes by keyboard simulation refresh. This script is compatible with this Raspian Bookworm from 10-10-2023. It does not use Wayland it changes back to X Server since some of the older tools like xdotool and unclutter don't work in Wayland. 
 
 ![raspbian](https://github.com/ugotapi/pagepi/assets/14945441/18d62fa5-5132-43a4-8662-9e30eba4d8ce)
 
