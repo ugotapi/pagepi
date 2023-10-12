@@ -23,18 +23,6 @@ sudo apt update
 sudo apt upgrade -y
 cd ~
 
-sed -i '/updater/d' /home/$USER/.config/wf-panel-pi.ini
-cat >> /home/$USER/.config/wf-panel-pi.ini << EOL
-# automatically hide when pointer isn't over the panel
-autohide=true
-# The minimal size of the panel. Note that some widgets might force panel bigger than this size.
-# All widgets also have individual settings for size
-# Changing this requires a panel restart
-minimal_height=45
-# time in milliseconds to wait before hiding
-autohide_duration=300
-EOL
-
 
 
 #hide mouse when no movement allow programmed refresh
