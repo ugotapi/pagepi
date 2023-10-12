@@ -1,7 +1,7 @@
 #!/bin/bash
 ifconfig
 # Ask the user for info
-read -p 'What is the website url:? ' webvar
+read -p 'What is the website url you want to display? ' webvar
 
 
 echo Site you want to display on TV? $webvar
