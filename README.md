@@ -1,7 +1,7 @@
 # pagepi
 Simple kiosk mode pi4 setup that shows an external web page on the TV attached.
 
-Youtube video:
+Youtube walkthrough:
 https://youtu.be/r2H2wu5l0kU?si=5oFrTSo499ySAL18
 
 By default page refreshes every 15 minutes by keyboard simulation refresh. This script is compatible with this Raspian Bookworm from 10-10-2023. It does not use Wayland it changes back to X Server since some of the older tools like xdotool and unclutter don't work in Wayland. 
