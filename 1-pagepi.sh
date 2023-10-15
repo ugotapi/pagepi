@@ -114,5 +114,5 @@ crontab mycron
 rm mycron
 
 
-read -p "After this reboot webisgte should display. To edit the website displayed edit: /home/$USER/myscript.sh  Hit Enter key to continue"
+read -p "After this reboot your website should display. To edit the website displayed edit: the file here /home/$USER/myscript.sh  Hit Enter key to continue"
 sudo reboot
