@@ -38,7 +38,7 @@ sudo sed -i '/  point_at_menu=0/a notifications=0' /home/$USER/.config/lxpanel/L
 
 
 
-#hide mouse when no movement allow programmed refresh
+#hide mouse when no movement and allow programmed refresh with cron script
 sudo apt install xdotool unclutter -y
 
 
@@ -65,7 +65,7 @@ sudo sed -i "s/window_manager=.*/window_manager=openbox/" /home/$USER/.config/lx
 
 
 
-#create the file that starts Chromium a displays a web page. myscript is what you edit to get a different web page on the TV. 
+#create the file that starts Chromium a displays a web page. myscript.sh is what you edit to get a different web page on the TV. 
 cat > /home/$USER/myscript.sh << EOL
 #!/bin/sh
 # what this script does: start chromium
@@ -94,13 +94,17 @@ show_mounts=0
 EOL
 
 
-# refresh screen local via keyboard emulation
+# refresh screen local via keyboard emulation. If you want to have multiple separate windows of chromium running on your tv and need refreshing, you would add additional copies of line 50, 51, 52 to the refresh.sh script. 
 echo '#!/bin/sh' > /home/$USER/refresh.sh 
 echo '# blah blah' >> /home/$USER/refresh.sh 
+# line 50
 echo 'WID=$(xdotool search --onlyvisible --class chromium|head -1)' >> /home/$USER/refresh.sh 
+# line 51
 echo 'xdotool windowactivate ${WID}' >> /home/$USER/refresh.sh 
+# line 52
 echo 'xdotool key ctrl+F5' >> /home/$USER/refresh.sh 
 
+# make executable
 sudo chmod +x /home/$USER/refresh.sh 
 
 cd ~
