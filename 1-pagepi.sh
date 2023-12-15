@@ -94,7 +94,8 @@ show_mounts=0
 EOL
 
 
-# refresh screen local via keyboard emulation. If you want to have multiple separate windows of chromium running on your tv and need refreshing, you would add additional copies of line 50, 51, 52 to the refresh.sh script. 
+# refresh screen local via keyboard emulation. If you want to have multiple separate windows of chromium running on your tv and need refreshing, you would add additional copies of line 50, 51, 52 to the refresh.sh script. Then edit the mysript.sh 
+# and add chromium lines for location of those windows you need. 
 echo '#!/bin/sh' > /home/$USER/refresh.sh 
 echo '# blah blah' >> /home/$USER/refresh.sh 
 # line 50
