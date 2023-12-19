@@ -24,6 +24,9 @@ chromium-browser --new-window --window-position=0,0 --window-size=2160,1280--inc
 
 EOL  
 
+DISPLAY=:0 xrandr --output HDMI-1 --rotate right
+
+
 sudo reboot
 
 
