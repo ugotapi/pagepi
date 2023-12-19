@@ -5,8 +5,7 @@
 
 #overwrite existing myscript.sh
 
-cat > /home/$USER/myscript.sh << EOL
-
+cat > /home/$USER/myscript.sh << EOLP
 #!/bin/sh
 # what this script does: start chromium
 
@@ -22,9 +21,10 @@ chromium-browser --new-window --window-position=0,0 --window-size=2160,1280--inc
 --enable-features=OverlayScrollbar,OverlayScrollbarFlashAfterAnyScrollUpdate,OverlayScrollbarFlashWhenMouseEnter \
 --app=https://www.wsj.com &
 
-EOL  
+EOLP
 
 DISPLAY=:0 xrandr --output HDMI-1 --rotate right
+
 
 
 sudo reboot
