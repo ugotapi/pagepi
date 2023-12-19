@@ -1,8 +1,5 @@
 #!/bin/sh
 # 3up internet screens portait
-# what this script does: start chromium
-
-#  rotate screen
 
 #overwrite existing myscript.sh
 
