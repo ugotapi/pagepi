@@ -25,10 +25,3 @@ chromium-browser --new-window --window-position=2562,0 --window-size=2160,1280--
 EOLP
 
 
-DISPLAY=:0 xrandr --output HDMI-1 --rotate right
-
-
-read -p "Hit Enter key to reboo"
-sudo reboot
-
-
