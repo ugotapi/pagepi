@@ -1,7 +1,7 @@
 #!/bin/sh
 # what this script does: start chromium
 
-DISPLAY=:0 xrandr --output HDMI-1 --rotate right
+#  rotate screen
 
 #overwrite existing myscript.sh
 
