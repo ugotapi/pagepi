@@ -1,6 +1,5 @@
 #!/bin/sh
-# 3up internet screens portait
-
+# 4 up web pages
 #overwrite existing myscript.sh
 
 cat > /home/$USER/myscript.sh << EOLP
