@@ -1,7 +1,3 @@
-#!/bin/sh
-# 4 up web pages
-#overwrite existing myscript.sh
-
 cat > /home/$USER/myscript.sh << EOLP
 #!/bin/sh
 # what this script does: start chromium
