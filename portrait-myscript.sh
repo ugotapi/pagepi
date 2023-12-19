@@ -11,7 +11,7 @@ chromium-browser --new-window --window-position=0,0 --window-size=2160,1280 --in
 --enable-features=OverlayScrollbar,OverlayScrollbarFlashAfterAnyScrollUpdate,OverlayScrollbarFlashWhenMouseEnter \
 --app=https://www.google.com/finance &
 
-chromium-browser --new-window --window-position=,1281 --window-size=2160,1280 --incognito --user-data-dir=/home/$USER/.config/chromium3 \
+chromium-browser --new-window --window-position=0,1281 --window-size=2160,1280 --incognito --user-data-dir=/home/$USER/.config/chromium3 \
 --enable-features=OverlayScrollbar,OverlayScrollbarFlashAfterAnyScrollUpdate,OverlayScrollbarFlashWhenMouseEnter \
 --app=https://cnbc.com &
 
