@@ -28,6 +28,6 @@ chromium-browser --new-window --window-position=0,1281 --window-size=2160,1080 -
 
 chromium-browser --new-window --window-position=0,2562 --window-size=2160,1080 --incognito --user-data-dir=/home/$USER/.config/chromium3 \
 --enable-features=OverlayScrollbar,OverlayScrollbarFlashAfterAnyScrollUpdate,OverlayScrollbarFlashWhenMouseEnter \
---app=https://www.wsj.com/market-data?mod=finance_mdw_mdc &
+--app=https://finviz.com/map.ashx?t=geo &
 
 EOLP
