@@ -24,7 +24,7 @@ chromium-browser --new-window --window-position=0,0 --window-size=2160,1920 --in
 
 chromium-browser --new-window --window-position=0,1281 --window-size=2160,1920 --incognito --user-data-dir=/home/$USER/.config/chromium2 \
 --enable-features=OverlayScrollbar,OverlayScrollbarFlashAfterAnyScrollUpdate,OverlayScrollbarFlashWhenMouseEnter \
---app=https://www.cnbc.com/us-markets/ &
+--app=https://tradingview.com/markets/ &
 
 chromium-browser --new-window --window-position=0,2562 --window-size=2160,1920 --incognito --user-data-dir=/home/$USER/.config/chromium3 \
 --enable-features=OverlayScrollbar,OverlayScrollbarFlashAfterAnyScrollUpdate,OverlayScrollbarFlashWhenMouseEnter \
