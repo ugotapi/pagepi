@@ -1,14 +1,13 @@
 #!/bin/bash
 cd ~
-sudo sed -i '$i'"$(echo 'DISPLAY=:0 xrandr --output HDMI-1 --rotate right')" /home/$USER/.config/lxsession/LXDE-pi/autostart
+sudo sed -i '$i'"$(echo 'sh /home/'$USER'/3up.sh')" /home/$USER/.config/lxsession/LXDE-pi/autostart
 
-cat > /home/$USER/3up.sh << EOLP
+cat > /home/$USER/3up.sh << EOLX
 #!/bin/sh
 # what this script does
+DISPLAY=:0 xrandr --output HDMI-1 --rotate right
 
-
-
-EOLP
+EOLX
 
 
 
