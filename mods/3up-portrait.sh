@@ -31,3 +31,20 @@ chromium-browser --new-window --window-position=0,2562 --window-size=2160,1280 -
 --app=https://tradingview.com/markets/ &
 
 EOLP
+
+
+#add two more chromium window refreshes in since we have three chromiums running 
+
+# line 50
+echo 'WID=$(xdotool search --onlyvisible --class chromium|head -1)' >> /home/$USER/refresh.sh 
+# line 51
+echo 'xdotool windowactivate ${WID}' >> /home/$USER/refresh.sh 
+# line 52
+echo 'xdotool key ctrl+F5' >> /home/$USER/refresh.sh 
+
+# line 50
+echo 'WID=$(xdotool search --onlyvisible --class chromium|head -1)' >> /home/$USER/refresh.sh 
+# line 51
+echo 'xdotool windowactivate ${WID}' >> /home/$USER/refresh.sh 
+# line 52
+echo 'xdotool key ctrl+F5' >> /home/$USER/refresh.sh 
