@@ -22,7 +22,7 @@ Do the Pagepi install following the youtube above. Then download and run the 3up
 https://github.com/ugotapi/pagepi/blob/main/mods/3up-portrait.sh
 
 
-Reboot to get a three page portait setting kiosk. Change specific web pages displayed afterwards by editing the myscript.sh file under the user profile on the Raspberry Pi. 
+Reboot to get a three page portait setting kiosk. Change specific web pages displayed afterwards by editing 3up-portrait.sh file or the myscript.sh file under the user profile on the Raspberry Pi. 
 
 
 ![3upfinance](https://github.com/ugotapi/pagepi/assets/14945441/d506c11a-37b2-4748-8c5a-949511fb5a2f)
