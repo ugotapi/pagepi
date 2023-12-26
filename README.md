@@ -1,5 +1,5 @@
 # pagepi
-Simple kiosk mode pi4 setup that shows an external web page on the TV attached.
+Simple Digital Signage mode pi4 setup that shows an external web page on the TV attached.
 
 Youtube walkthrough:
 https://youtu.be/r2H2wu5l0kU?si=5oFrTSo499ySAL18
