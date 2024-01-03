@@ -19,3 +19,27 @@ chromium-browser --new-window --window-position=1921,1081 --window-size=1920,108
 --app=https://www.barchart.com/stocks/market-performance &
 
 EOLP
+
+
+#add three more chromium window refreshes in since we have three chromiums running 
+
+# line 50
+echo 'WID=$(xdotool search --onlyvisible --class chromium|head -1)' >> /home/$USER/refresh.sh 
+# line 51
+echo 'xdotool windowactivate ${WID}' >> /home/$USER/refresh.sh 
+# line 52
+echo 'xdotool key ctrl+F5' >> /home/$USER/refresh.sh 
+
+# line 50
+echo 'WID=$(xdotool search --onlyvisible --class chromium|head -1)' >> /home/$USER/refresh.sh 
+# line 51
+echo 'xdotool windowactivate ${WID}' >> /home/$USER/refresh.sh 
+# line 52
+echo 'xdotool key ctrl+F5' >> /home/$USER/refresh.sh 
+
+# line 50
+echo 'WID=$(xdotool search --onlyvisible --class chromium|head -1)' >> /home/$USER/refresh.sh 
+# line 51
+echo 'xdotool windowactivate ${WID}' >> /home/$USER/refresh.sh 
+# line 52
+echo 'xdotool key ctrl+F5' >> /home/$USER/refresh.sh 
