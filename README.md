@@ -4,7 +4,7 @@ Simple Digital Signage mode pi4 setup that shows an external web page on the TV 
 Youtube walkthrough:
 https://youtu.be/r2H2wu5l0kU?si=5oFrTSo499ySAL18
 
-Remote setup on ssh server enabled new install of Raspbian: https://youtu.be/mfGwRGGV6Yw
+Remote setup on ssh server enabled new install of Raspberry Pi OS: https://youtu.be/mfGwRGGV6Yw
 
 By default page refreshes every 15 minutes by keyboard simulation refresh. This script is compatible with this Raspian Bookworm from 10-10-2023. It does not use Wayland it changes back to X Server since some of the older tools like xdotool and unclutter don't work in Wayland. 
 
