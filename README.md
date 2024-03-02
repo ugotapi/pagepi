@@ -6,7 +6,7 @@ https://youtu.be/r2H2wu5l0kU?si=5oFrTSo499ySAL18
 
 Remote setup on ssh server enabled new install of Raspberry Pi OS: https://youtu.be/mfGwRGGV6Yw
 
-By default page refreshes every 15 minutes by keyboard simulation refresh. This script is compatible with this Raspian Bookworm from 10-10-2023. It does not use Wayland it changes back to X Server since some of the older tools like xdotool and unclutter don't work in Wayland. 
+By default the page refreshes every 15 minutes by keyboard simulation refresh. This script is compatible with this Raspian Bookworm from 10-10-2023. It does not use Wayland it changes back to X Server since some of the older tools like xdotool and unclutter don't work in Wayland. 
 
 ![raspbian](https://github.com/ugotapi/pagepi/assets/14945441/18d62fa5-5132-43a4-8662-9e30eba4d8ce)
 
