@@ -1,6 +1,6 @@
 # pagepi
 Simple Digital Signage mode pi4 setup that shows an external web page on the TV attached.
-OLDER SETUP RECOMMNED TO USE THE WAYLAND using pagepi >   ![wayland](https://github.com/ugotapi/wayland-pagepi)
+OLDER SETUP RECOMMNED TO USE THE WAYLAND using pagepi >   [wayland](https://github.com/ugotapi/wayland-pagepi)
 
 Remote setup on ssh server enabled new install of Raspberry Pi OS: https://youtu.be/mfGwRGGV6Yw
 
